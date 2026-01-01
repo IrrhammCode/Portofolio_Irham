@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Irham - Undergraduate Informatics Student</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-text">Irham</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#hackathons" class="nav-link">Hackathons</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content container">
+            <h2 class="hero-title">Undergraduate Informatics Student</h2>
+            <h1 class="hero-name">Irham</h1>
+            <p class="hero-description">Mengeksplorasi masa depan teknologi melalui Web3, Blockchain, dan Cloud
+                Computing</p>
+            <div class="hero-cta">
+                <button class="cta-button" onclick="scrollToSection('projects')">
+                    <span>Lihat Proyek</span>
+                    <i class="fas fa-arrow-right"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Tentang Saya</h2>
+                <div class="title-divider"></div>
+            </div>
+            <div class="about-content">
+                <div class="about-image">
+                    <div class="portrait-container">
+                        <img src="Irham-foto.jpg" alt="Irham - Undergraduate Informatics Student"
+                            class="portrait-image">
+                        <div class="image-glow"></div>
+                    </div>
+                </div>
+                <div class="about-text">
+                    <h3 class="about-subtitle">Tech Enthusiast</h3>
+                    <p class="about-description">
+                        Halo! Perkenalkan saya Irham, berusia 21 tahun dan sedang menempuh pendidikan
+                        di Telkom University S-1 Informatika, saat ini berada di semester 5. Saya sangat tertarik
+                        dengan dunia Web3, Blockchain, dan Cloud Computing yang merupakan teknologi masa depan.
+                    </p>
+                    <p class="about-description">
+                        Saat ini saya sedang aktif mempelajari smart contracts, decentralized applications (dApps),
+                        dan cloud architecture. Saya percaya bahwa teknologi blockchain dan cloud computing akan
+                        membentuk masa depan digital, dan saya ingin menjadi bagian dari revolusi teknologi ini.
+                    </p>
+                    <div class="skills-tags">
+                        <span class="skill-tag">Web3</span>
+                        <span class="skill-tag">Blockchain</span>
+                        <span class="skill-tag">Smart Contracts</span>
+                        <span class="skill-tag">Cloud Computing</span>
+                        <span class="skill-tag">Go-lang</span>
+                        <span class="skill-tag">Python</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Proyek Unggulan</h2>
+                <div class="title-divider"></div>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="chainlens.png" alt="ChainLens Analytics Platform" class="project-screenshot">
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">ChainLens Analytics</h3>
+                        <p class="project-description">Multi-chain blockchain analytics platform dengan AI integration
+                        </p>
+                        <div class="project-tech">
+                            <i class="fas fa-brain"></i>
+                            <i class="fab fa-ethereum"></i>
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="lingkar.png" alt="Lingkar Platform" class="project-screenshot">
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">Lingkar Platform</h3>
+                        <p class="project-description">NFT Identity & SocialFi untuk monetisasi kreator yang adil dan
+                            transparan</p>
+                        <div class="project-tech">
+                            <i class="fas fa-users"></i>
+                            <i class="fab fa-ethereum"></i>
+                            <i class="fas fa-coins"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="wallet.png" alt="TON Wallet Balance" class="project-screenshot">
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">TON Wallet Balance</h3>
+                        <p class="project-description">Wallet balance checker untuk TON blockchain dengan JavaScript</p>
+                        <div class="project-tech">
+                            <i class="fas fa-wallet"></i>
+                            <i class="fab fa-telegram"></i>
+                            <i class="fab fa-js"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hackathon & Achievements Section -->
+    <section id="hackathons" class="hackathons">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Hackathon & Achievements</h2>
+                <div class="title-divider"></div>
+            </div>
+            <div class="achievements-grid">
+                <!-- Achievement Card 1: Forte Hacks -->
+                <div class="achievement-card featured">
+                    <div class="achievement-icon">
+                        <i class="fas fa-fire"></i>
+                    </div>
+                    <div class="achievement-content">
+                        <span class="achievement-place">🏆 Triple Track Winner</span>
+                        <h3 class="achievement-title">Forte Hacks 2025</h3>
+                        <p class="achievement-desc">Dominated the competition by winning across 3 different tracks,
+                            showcasing versatility in blockchain development and innovation.</p>
+                        <span class="achievement-date">2025</span>
+                    </div>
+                </div>
+
+                <!-- Achievement Card 2: Surreal World Assets -->
+                <div class="achievement-card">
+                    <div class="achievement-icon">
+                        <i class="fas fa-gem"></i>
+                    </div>
+                    <div class="achievement-content">
+                        <span class="achievement-place">🎯 Partner Bounty Winner</span>
+                        <h3 class="achievement-title">Surreal World Assets Buildathon</h3>
+                        <p class="achievement-desc">Secured the abv.dev partner bounty for outstanding implementation
+                            and creative use of decentralized technologies.</p>
+                        <span class="achievement-date">2025</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Hubungi Saya</h2>
+                <div class="title-divider"></div>
+            </div>
+            <div class="contact-content">
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/irhammhamzah/" target="_blank" class="social-link">
+                        <i class="fab fa-linkedin"></i>
+                        <span>LinkedIn</span>
+                    </a>
+                    <a href="https://github.com/IrrhammCode" target="_blank" class="social-link">
+                        <i class="fab fa-github"></i>
+                        <span>GitHub</span>
+                    </a>
+                    <a href="mailto:irhamhamzahedu@gmail.com" class="social-link">
+                        <i class="fas fa-envelope"></i>
+                        <span>Email</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Irham. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

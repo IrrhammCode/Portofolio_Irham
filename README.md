@@ -1,51 +1,62 @@
-# Portfolio Irham - Web Developer
+# Portfolio Irham
 
-Portfolio website dengan tema dark mode yang mewah dan sophisticated untuk web developer.
+Portfolio website dengan tema dark mode yang mewah dan sophisticated untuk mahasiswa Informatika yang passionate dengan Web3, Blockchain, dan Cloud Computing.
 
-## 🎨 Fitur Utama
+## 🎯 Tentang Saya
 
-### Hero Section
-- Typography mewah dengan efek gradient dan glow
-- Animasi geometric pattern yang subtle
-- Glassmorphism effect pada visual card
-- Call-to-action button dengan hover effects
+Halo! Perkenalkan saya **Irham**, berusia 21 tahun dan sedang menempuh pendidikan di **Telkom University S-1 Informatika**, saat ini berada di semester 5. Saya sangat tertarik dengan dunia **Web3, Blockchain, dan Cloud Computing** yang merupakan teknologi masa depan.
 
-### About Section
-- Layout profesional dengan portrait placeholder
-- Typography serif untuk headings
-- Skill tags dengan hover animations
-- Background gradient yang subtle
+Saat ini saya sedang aktif mempelajari smart contracts, decentralized applications (dApps), dan cloud architecture. Saya percaya bahwa teknologi blockchain dan cloud computing akan membentuk masa depan digital, dan saya ingin menjadi bagian dari revolusi teknologi ini.
 
-### Projects Section
-- Grid layout responsif
-- Project cards dengan glassmorphism
-- Mockup preview dengan animasi
-- Tech stack icons dengan hover effects
-- Glowing border pada hover
+## 🚀 Proyek Unggulan
 
-### Contact Section
-- Form input dengan floating labels
-- Glowing focus effects
-- Social media links dengan animations
-- Submit button dengan loading state
+### 1. ChainLens Analytics
+**Multi-chain blockchain analytics platform dengan AI integration**
+- Teknologi: AI/Brain, Ethereum, Analytics
+- Fitur: Multi-chain wallet checks, AI-powered portfolio analysis
+- Status: ✅ Completed
+- Repository: [GitHub ChainLens](https://github.com/IrrhammCode/chainlens)
 
-## 🛠️ Teknologi yang Digunakan
+### 2. Lingkar Platform
+**NFT Identity & SocialFi untuk monetisasi kreator yang adil dan transparan**
+- Teknologi: Users/Community, Ethereum, Cryptocurrency
+- Fitur: NFT Identity, SocialFi monetization, Community Circles, DeFi for Creators
+- Status: 🔄 In Progress
+- Deskripsi: Platform Web3 yang kompleks dengan fitur SocialFi dan DeFi untuk creator economy
 
+### 3. TON Wallet Balance
+**Wallet balance checker untuk TON blockchain dengan JavaScript**
+- Teknologi: Wallet, Telegram, JavaScript
+- Fitur: TON blockchain integration, wallet management
+- Status: ✅ Completed
+- Repository: [GitHub aydenchain](https://github.com/aydenchain/ton-wallet-balance)
+
+## 🛠️ Tech Stack
+
+### Frontend
 - **HTML5** - Struktur semantic
 - **CSS3** - Styling dengan CSS Grid, Flexbox, dan Custom Properties
 - **JavaScript ES6+** - Interaktivitas dan animasi
 - **Font Awesome** - Icons
 - **Google Fonts** - Typography (Inter & Playfair Display)
 
-## 🎯 Fitur Design
+### Skills & Technologies
+- **Web3** - Teknologi web terdesentralisasi
+- **Blockchain** - Teknologi blockchain dan cryptocurrency
+- **Smart Contracts** - Kontrak pintar untuk blockchain
+- **Cloud Computing** - Komputasi awan dan infrastruktur
+- **Go-lang** - Bahasa pemrograman Go (Google)
+- **Python** - Bahasa pemrograman Python
 
-### Dark Theme
+## 🎨 Fitur Design
+
+### Dark Theme Mewah
 - Background hitam dengan tekstur subtle
 - Color palette yang sophisticated
 - Glassmorphism dan neumorphism effects
-- Glowing elements dengan warna accent
+- Glowing elements dengan warna accent biru-ungu
 
-### Animasi
+### Animasi & Interaktivitas
 - Smooth scrolling navigation
 - Intersection Observer untuk scroll animations
 - Parallax effects pada background
@@ -92,7 +103,7 @@ Edit CSS custom properties di `:root`:
 
 ### Mengubah Konten
 - Edit teks di `index.html`
-- Ganti placeholder portrait dengan foto asli
+- Ganti foto profil dengan foto asli
 - Update project information
 - Sesuaikan social media links
 
@@ -108,7 +119,11 @@ Portofolio-Irham/
 ├── index.html          # Struktur HTML utama
 ├── styles.css          # Styling dan animasi CSS
 ├── script.js           # JavaScript interaktivitas
-└── README.md           # Dokumentasi proyek
+├── README.md           # Dokumentasi proyek
+├── Irham-foto.jpg      # Foto profil
+├── chainlens.png       # Screenshot ChainLens project
+├── lingkar.png         # Screenshot Lingkar project
+└── wallet.png          # Screenshot TON Wallet project
 ```
 
 ## 🔧 Performance
@@ -122,14 +137,14 @@ Portofolio-Irham/
 
 Proyek ini dibuat untuk portfolio personal. Silakan gunakan sebagai referensi atau template dengan memberikan credit.
 
-## 👨‍💻 Developer
+## 👨‍💻 Kontak
 
-**Irham** - Software Architect
-- Portfolio: [Your Portfolio URL]
-- LinkedIn: [Your LinkedIn]
-- GitHub: [Your GitHub]
-- Email: [Your Email]
+**Irham** - Undergraduate Informatics Student
+- **Portfolio:** [GitHub Portfolio](https://github.com/IrrhammCode)
+- **LinkedIn:** [Irham Muhammad Hamzah](https://www.linkedin.com/in/irhammhamzah/)
+- **GitHub:** [IrrhammCode](https://github.com/IrrhammCode)
+- **Email:** irhamhamzahedu@gmail.com
 
 ---
 
-*Dibuat dengan ❤️ menggunakan teknologi web modern*
+*Dibuat dengan ❤️ menggunakan teknologi web modern untuk mengeksplorasi masa depan teknologi melalui Web3, Blockchain, dan Cloud Computing*
