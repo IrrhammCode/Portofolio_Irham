@@ -531,6 +531,83 @@ h6 {
     margin-top: 0.5rem;
 }
 
+/* Experience Section */
+.experience {
+    padding: 120px 0;
+}
+
+.experience-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2rem;
+}
+
+.experience-card {
+    display: flex;
+    gap: 1.5rem;
+    padding: 2rem;
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 20px;
+    transition: all 0.3s ease;
+}
+
+.experience-card:hover {
+    background: rgba(255, 255, 255, 0.04);
+    border-color: rgba(174, 0, 255, 0.2);
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px -10px rgba(174, 0, 255, 0.15);
+}
+
+.experience-icon {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, var(--accent-purple), var(--accent-pink));
+    border-radius: 16px;
+    flex-shrink: 0;
+}
+
+.experience-icon i {
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+.experience-content {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.experience-role {
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: var(--accent-purple);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.experience-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--text-primary);
+}
+
+.experience-desc {
+    font-size: 0.95rem;
+    color: var(--text-muted);
+    line-height: 1.6;
+}
+
+.experience-date {
+    font-size: 0.8rem;
+    color: var(--text-muted);
+    opacity: 0.7;
+    margin-top: 0.5rem;
+}
+
 /* Contact Section */
 .contact {
     padding: 100px 0;
