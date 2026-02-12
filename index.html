@@ -1,35 +1,42 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Irham - Undergraduate Informatics Student</title>
+    <title>Irham Muhammad Hamzah — Award-Winning Developer</title>
+    <meta name="description"
+        content="Portfolio of Irham Muhammad Hamzah, a 4x hackathon winner and full-stack developer specializing in AI, blockchain, and mobile applications.">
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 
 <body>
+    <!-- Grain Overlay -->
+    <div class="noise-overlay"></div>
+
+    <!-- Cursor Glow -->
+    <div class="cursor-glow" id="cursorGlow"></div>
+
     <!-- Navigation -->
-    <nav class="navbar">
+    <nav class="navbar" id="navbar">
         <div class="nav-container">
-            <div class="nav-logo">
-                <span class="logo-text">Irham</span>
-            </div>
-            <ul class="nav-menu">
+            <a href="#home" class="nav-logo">
+                <div class="logo-mark">IMH</div>
+            </a>
+            <ul class="nav-menu" id="nav-menu">
                 <li><a href="#home" class="nav-link">Home</a></li>
                 <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#achievements" class="nav-link">Achievements</a></li>
                 <li><a href="#projects" class="nav-link">Projects</a></li>
-                <li><a href="#hackathons" class="nav-link">Hackathons</a></li>
-                <li><a href="#experience" class="nav-link">Experience</a></li>
                 <li><a href="#contact" class="nav-link">Contact</a></li>
             </ul>
-            <div class="hamburger">
+            <div class="hamburger" id="hamburger">
                 <span class="bar"></span>
                 <span class="bar"></span>
                 <span class="bar"></span>
@@ -37,254 +44,350 @@
         </div>
     </nav>
 
-    <!-- Hero Section -->
+    <!-- ==================== HERO ==================== -->
     <section id="home" class="hero">
         <div class="hero-content container">
-            <h2 class="hero-title">Undergraduate Informatics Student</h2>
-            <h1 class="hero-name">Irham</h1>
-            <p class="hero-description">Exploring the future of technology through Web3, Blockchain, and Cloud
-                Computing</p>
-            <div class="hero-cta">
-                <button class="cta-button" onclick="scrollToSection('projects')">
-                    <span>View Projects</span>
-                    <i class="fas fa-arrow-right"></i>
-                </button>
+            <div class="hero-eyebrow">
+                <div class="status-dot"></div>
+                <span>Open to Opportunities</span>
             </div>
+
+            <h1 class="hero-name">
+                <span class="line">Irham Muhammad</span>
+                <span class="line accent">Hamzah.</span>
+            </h1>
+
+            <p class="hero-sub">
+                I build things that matter — from <em>AI-powered finance apps</em> to <em>blockchain platforms</em>.<br>
+                4x hackathon winner. Currently exploring the frontier of <strong>Machine Learning</strong>.
+            </p>
+
+            <div class="hero-metrics">
+                <div class="metric">
+                    <div class="metric-value" data-count="4">0</div>
+                    <div class="metric-label">Hackathon<br>Wins</div>
+                </div>
+                <div class="metric">
+                    <div class="metric-value" data-count="5">0</div>
+                    <div class="metric-label">Projects<br>Shipped</div>
+                </div>
+                <div class="metric">
+                    <div class="metric-value" data-count="2">0</div>
+                    <div class="metric-label">Years<br>Building</div>
+                </div>
+            </div>
+
+            <div class="hero-actions">
+                <a href="#projects" class="btn btn-primary">
+                    See My Work
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+                <a href="https://github.com/IrrhammCode" target="_blank" class="btn btn-ghost">
+                    <i class="fab fa-github"></i>
+                    GitHub
+                </a>
+                <a href="https://www.linkedin.com/in/irhammhamzah/" target="_blank" class="btn btn-ghost">
+                    <i class="fab fa-linkedin"></i>
+                    LinkedIn
+                </a>
+            </div>
+        </div>
+        <div class="hero-scroll-hint">
+            <span>Scroll</span>
+            <div class="scroll-line"></div>
         </div>
     </section>
 
-
-    <!-- About Section -->
+    <!-- ==================== ABOUT ==================== -->
     <section id="about" class="about">
         <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">About Me</h2>
-                <div class="title-divider"></div>
-            </div>
-            <div class="about-content">
-                <div class="about-image">
-                    <div class="portrait-container">
-                        <img src="Irham-foto.jpg" alt="Irham - Undergraduate Informatics Student"
-                            class="portrait-image">
-                        <div class="image-glow"></div>
+            <div class="about-layout">
+                <div class="about-photo-col">
+                    <div class="photo-card">
+                        <img src="Irham-foto.jpg" alt="Irham Muhammad Hamzah" class="photo">
+                        <div class="photo-gradient"></div>
+                    </div>
+                    <div class="photo-caption">
+                        <span class="caption-icon">📍</span> Bandung, Indonesia
                     </div>
                 </div>
-                <div class="about-text">
-                    <h3 class="about-subtitle">Tech Enthusiast</h3>
-                    <p class="about-description">
-                        Hi! I'm Irham, a 21-year-old undergraduate student pursuing Informatics at Telkom University,
-                        currently in my 5th semester. I'm deeply passionate about Web3, Blockchain, and Cloud Computing—
-                        technologies that are shaping the future.
+
+                <div class="about-text-col">
+                    <span class="label">About Me</span>
+                    <h2 class="about-title">Engineer who ships.</h2>
+                    <p>
+                        I'm a Computer Science undergraduate at <strong>Telkom University</strong> (Class of 2027)
+                        who doesn't wait for permission to build. What started as curiosity in Web3 has
+                        evolved into a full-stack practice spanning <strong>AI, mobile, and decentralized
+                            systems</strong>.
                     </p>
-                    <p class="about-description">
-                        I'm actively learning smart contracts, decentralized applications (dApps), and cloud
-                        architecture.
-                        I believe that blockchain and cloud computing will shape the digital future, and I want to be
-                        part of this technological revolution.
+                    <p>
+                        In just two years, I've won <strong>4 major hackathons</strong> — not by cutting corners,
+                        but by combining speed with craft. I believe the best software comes from
+                        understanding <em>people</em> first, then writing code.
                     </p>
-                    <div class="skills-tags">
-                        <span class="skill-tag">Web3</span>
-                        <span class="skill-tag">Blockchain</span>
-                        <span class="skill-tag">Smart Contracts</span>
-                        <span class="skill-tag">Cloud Computing</span>
-                        <span class="skill-tag">Go-lang</span>
-                        <span class="skill-tag">Python</span>
+                    <p>
+                        Right now, I'm deep in <strong>Machine Learning & Artificial Intelligence</strong> —
+                        studying neural architectures, LLM fine-tuning, and computer vision to build
+                        apps that don't just respond, but truly <em>understand</em>.
+                    </p>
+
+                    <div class="tech-stack">
+                        <span class="label">Stack</span>
+                        <div class="tags">
+                            <span>TypeScript</span>
+                            <span>React Native</span>
+                            <span>Next.js</span>
+                            <span>Node.js</span>
+                            <span>Python</span>
+                            <span>Go</span>
+                            <span>Solidity</span>
+                            <span>OpenAI</span>
+                            <span class="tag-highlight">AI / ML</span>
+                            <span class="tag-highlight">LLMs</span>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Projects Section -->
+    <!-- ==================== ACHIEVEMENTS ==================== -->
+    <section id="achievements" class="achievements">
+        <div class="container">
+            <div class="section-intro">
+                <span class="label">Track Record</span>
+                <h2 class="section-heading">Hackathon Victories</h2>
+                <p class="section-desc">Consistently delivering award-winning products under extreme time constraints.
+                </p>
+            </div>
+
+            <div class="wins-list">
+                <!-- 2026 year marker -->
+                <div class="year-marker"><span>2026</span></div>
+
+                <div class="win-card win-featured">
+                    <div class="win-indicator"></div>
+                    <div class="win-meta">
+                        <span class="win-badge">🏆 Winner</span>
+                        <span class="win-year">2026</span>
+                    </div>
+                    <h3 class="win-name">MetaMask Advanced Permissions Hackathon</h3>
+                    <p class="win-desc">Built <strong>Agent-7715</strong>, an autonomous AI agent leveraging MetaMask's
+                        permission system, and <strong>ChainLens</strong>, a multi-chain analytics dashboard. Won across
+                        multiple categories for innovation in wallet UX and developer tooling.</p>
+                    <div class="win-repos">
+                        <a href="https://github.com/IrrhammCode/Agent-7715" target="_blank"><i
+                                class="fab fa-github"></i> Agent-7715</a>
+                        <a href="https://github.com/IrrhammCode/chainlens" target="_blank"><i class="fab fa-github"></i>
+                            ChainLens</a>
+                    </div>
+                </div>
+
+                <div class="win-card">
+                    <div class="win-indicator"></div>
+                    <div class="win-meta">
+                        <span class="win-badge">🏆 Winner</span>
+                        <span class="win-year">2026</span>
+                    </div>
+                    <h3 class="win-name">Arbitrum APAC Mini Hackathon</h3>
+                    <p class="win-desc">Created <strong>StylusArena</strong>, a competitive gaming platform on Arbitrum
+                        Stylus with Rust smart contracts. Recognized for pushing the boundaries of on-chain gaming in
+                        the APAC region.</p>
+                    <div class="win-repos">
+                        <a href="https://github.com/IrrhammCode/StylusArena" target="_blank"><i
+                                class="fab fa-github"></i> StylusArena</a>
+                    </div>
+                </div>
+
+                <!-- 2025 year marker -->
+                <div class="year-marker"><span>2025</span></div>
+
+                <div class="win-card win-featured">
+                    <div class="win-indicator"></div>
+                    <div class="win-meta">
+                        <span class="win-badge">🔥 Triple Track Winner</span>
+                        <span class="win-year">2025</span>
+                    </div>
+                    <h3 class="win-name">Forte Hacks 2025</h3>
+                    <p class="win-desc">Dominated by winning across <strong>3 different tracks simultaneously</strong>.
+                        Built <strong>WatcherForte</strong>, a next-gen blockchain monitoring and alert system —
+                        showcasing deep versatility in full-stack blockchain engineering.</p>
+                    <div class="win-repos">
+                        <a href="https://github.com/IrrhammCode/WatcherForte" target="_blank"><i
+                                class="fab fa-github"></i> WatcherForte</a>
+                    </div>
+                </div>
+
+                <div class="win-card">
+                    <div class="win-indicator"></div>
+                    <div class="win-meta">
+                        <span class="win-badge">🎯 Bounty Winner</span>
+                        <span class="win-year">2025</span>
+                    </div>
+                    <h3 class="win-name">Surreal World Assets Buildathon 2</h3>
+                    <p class="win-desc">Shipped <strong>StorySeal</strong>, a decentralized storytelling and digital
+                        asset preservation platform. Secured the partner bounty for outstanding NFT provenance and
+                        creator tool implementation.</p>
+                    <div class="win-repos">
+                        <a href="https://github.com/IrrhammCode/StorySeal" target="_blank"><i class="fab fa-github"></i>
+                            StorySeal</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== PROJECTS ==================== -->
     <section id="projects" class="projects">
         <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Featured Projects</h2>
-                <div class="title-divider"></div>
+            <div class="section-intro">
+                <span class="label">Portfolio</span>
+                <h2 class="section-heading">Featured Projects</h2>
             </div>
-            <div class="projects-grid">
-                <!-- Bloom Project Card -->
-                <div class="project-card"
-                    onclick="window.open('https://github.com/IrrhammCode/Bloom-family-budget', '_blank')">
-                    <div class="project-image">
-                        <img src="bloom_preview.png" alt="Bloom: Family Budget" class="project-screenshot">
-                    </div>
-                    <div class="project-info">
-                        <h3 class="project-title">Bloom: Family Budget</h3>
-                        <p class="project-description">AI-powered financial copilot for mums. Features "Meal Magic"
-                            savings & wealth gamification.</p>
-                        <div class="project-tech">
-                            <i class="fab fa-react" title="React Native"></i>
-                            <i class="fas fa-brain" title="OpenAI GPT-4o"></i>
-                            <i class="fas fa-coins" title="RevenueCat"></i>
-                        </div>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="chainlens.png" alt="ChainLens Analytics Platform" class="project-screenshot">
-                    </div>
-                    <div class="project-info">
-                        <h3 class="project-title">ChainLens Analytics</h3>
-                        <p class="project-description">Multi-chain blockchain analytics platform with AI integration
-                        </p>
-                        <div class="project-tech">
-                            <i class="fas fa-brain"></i>
-                            <i class="fab fa-ethereum"></i>
-                            <i class="fas fa-chart-line"></i>
-                        </div>
-                    </div>
-                </div>
 
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="lingkar.png" alt="Lingkar Platform" class="project-screenshot">
+            <div class="project-list">
+                <!-- ChainLens -->
+                <a href="https://github.com/IrrhammCode/chainlens" target="_blank" class="project-row">
+                    <div class="project-number">01</div>
+                    <div class="project-main">
+                        <h3 class="project-name">ChainLens Analytics</h3>
+                        <p class="project-desc">Multi-chain blockchain analytics platform with AI-driven insights and
+                            portfolio intelligence.</p>
                     </div>
-                    <div class="project-info">
-                        <h3 class="project-title">Lingkar Platform</h3>
-                        <p class="project-description">NFT Identity & SocialFi for fair and transparent creator
-                            monetization</p>
-                        <div class="project-tech">
-                            <i class="fas fa-users"></i>
-                            <i class="fab fa-ethereum"></i>
-                            <i class="fas fa-coins"></i>
-                        </div>
+                    <div class="project-tags">
+                        <span>Next.js</span>
+                        <span>AI</span>
+                        <span>Ethereum</span>
                     </div>
-                </div>
+                    <div class="project-arrow"><i class="fas fa-arrow-up-right-from-square"></i></div>
+                </a>
 
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="wallet.png" alt="TON Wallet Balance" class="project-screenshot">
+                <!-- StylusArena -->
+                <a href="https://github.com/IrrhammCode/StylusArena" target="_blank" class="project-row">
+                    <div class="project-number">02</div>
+                    <div class="project-main">
+                        <h3 class="project-name">StylusArena</h3>
+                        <p class="project-desc">Competitive on-chain gaming on Arbitrum Stylus with Rust smart contracts
+                            for instant execution.</p>
                     </div>
-                    <div class="project-info">
-                        <h3 class="project-title">TON Wallet Balance</h3>
-                        <p class="project-description">Wallet balance checker for TON blockchain built with JavaScript
-                        </p>
-                        <div class="project-tech">
-                            <i class="fas fa-wallet"></i>
-                            <i class="fab fa-telegram"></i>
-                            <i class="fab fa-js"></i>
-                        </div>
+                    <div class="project-tags">
+                        <span>Rust</span>
+                        <span>Arbitrum</span>
+                        <span>Stylus</span>
                     </div>
-                </div>
+                    <div class="project-arrow"><i class="fas fa-arrow-up-right-from-square"></i></div>
+                </a>
+
+                <!-- Agent-7715 -->
+                <a href="https://github.com/IrrhammCode/Agent-7715" target="_blank" class="project-row">
+                    <div class="project-number">03</div>
+                    <div class="project-main">
+                        <h3 class="project-name">Agent-7715</h3>
+                        <p class="project-desc">Autonomous AI agent framework leveraging MetaMask's advanced permission
+                            system for secure wallet interactions.</p>
+                    </div>
+                    <div class="project-tags">
+                        <span>MetaMask</span>
+                        <span>AI Agent</span>
+                        <span>Web3</span>
+                    </div>
+                    <div class="project-arrow"><i class="fas fa-arrow-up-right-from-square"></i></div>
+                </a>
+
+                <!-- WatcherForte -->
+                <a href="https://github.com/IrrhammCode/WatcherForte" target="_blank" class="project-row">
+                    <div class="project-number">04</div>
+                    <div class="project-main">
+                        <h3 class="project-name">WatcherForte</h3>
+                        <p class="project-desc">Next-gen blockchain monitoring and alert system. Real-time on-chain
+                            event tracking and notifications.</p>
+                    </div>
+                    <div class="project-tags">
+                        <span>Blockchain</span>
+                        <span>Monitoring</span>
+                        <span>Alerts</span>
+                    </div>
+                    <div class="project-arrow"><i class="fas fa-arrow-up-right-from-square"></i></div>
+                </a>
+
+                <!-- StorySeal -->
+                <a href="https://github.com/IrrhammCode/StorySeal" target="_blank" class="project-row">
+                    <div class="project-number">05</div>
+                    <div class="project-main">
+                        <h3 class="project-name">StorySeal</h3>
+                        <p class="project-desc">Decentralized storytelling platform with NFT provenance and creator
+                            preservation tools.</p>
+                    </div>
+                    <div class="project-tags">
+                        <span>Solidity</span>
+                        <span>IPFS</span>
+                        <span>React</span>
+                    </div>
+                    <div class="project-arrow"><i class="fas fa-arrow-up-right-from-square"></i></div>
+                </a>
             </div>
         </div>
     </section>
 
-    <!-- Hackathon & Achievements Section -->
-    <section id="hackathons" class="hackathons">
+    <!-- ==================== LEARNING ==================== -->
+    <section class="learning">
         <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Hackathon & Achievements</h2>
-                <div class="title-divider"></div>
-            </div>
-            <div class="achievements-grid">
-                <!-- Achievement Card 1: Forte Hacks -->
-                <div class="achievement-card featured">
-                    <div class="achievement-icon">
-                        <i class="fas fa-fire"></i>
-                    </div>
-                    <div class="achievement-content">
-                        <span class="achievement-place">🏆 Triple Track Winner</span>
-                        <h3 class="achievement-title">Forte Hacks 2025</h3>
-                        <p class="achievement-desc">Dominated the competition by winning across 3 different tracks,
-                            showcasing versatility in blockchain development and innovation.</p>
-                        <span class="achievement-date">2025</span>
-                    </div>
+            <div class="learning-banner">
+                <div class="learning-icon-wrap">
+                    <i class="fas fa-brain"></i>
                 </div>
-
-                <!-- Achievement Card 2: Surreal World Assets -->
-                <div class="achievement-card">
-                    <div class="achievement-icon">
-                        <i class="fas fa-gem"></i>
-                    </div>
-                    <div class="achievement-content">
-                        <span class="achievement-place">🎯 Partner Bounty Winner</span>
-                        <h3 class="achievement-title">Surreal World Assets Buildathon</h3>
-                        <p class="achievement-desc">Secured the abv.dev partner bounty for outstanding implementation
-                            and creative use of decentralized technologies.</p>
-                        <span class="achievement-date">2025</span>
+                <div class="learning-text">
+                    <span class="label">Currently Exploring</span>
+                    <h3>Artificial Intelligence & Machine Learning</h3>
+                    <p>Going beyond API wrappers. Studying neural architectures, transformer models, and applied ML —
+                        with the mission of building AI-native mobile apps that genuinely understand and adapt to their
+                        users.</p>
+                    <div class="learning-chips">
+                        <span>Deep Learning</span>
+                        <span>LLM Fine-Tuning</span>
+                        <span>Computer Vision</span>
+                        <span>TensorFlow</span>
+                        <span>Prompt Engineering</span>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Experience Section -->
-    <section id="experience" class="experience">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Experience</h2>
-                <div class="title-divider"></div>
-            </div>
-            <div class="experience-grid">
-                <!-- Experience Card 1: Cultural Festival -->
-                <div class="experience-card">
-                    <div class="experience-icon">
-                        <i class="fas fa-music"></i>
-                    </div>
-                    <div class="experience-content">
-                        <span class="experience-role">Technical Operator</span>
-                        <h3 class="experience-title">Cultural Festival</h3>
-                        <p class="experience-desc">Managed audio-visual equipment and stage operations for the annual
-                            high school cultural festival, ensuring seamless performances and presentations.</p>
-                        <span class="experience-date">2022</span>
-                    </div>
-                </div>
-
-                <!-- Experience Card 2: Sports Week -->
-                <div class="experience-card">
-                    <div class="experience-icon">
-                        <i class="fas fa-futbol"></i>
-                    </div>
-                    <div class="experience-content">
-                        <span class="experience-role">Event Operator</span>
-                        <h3 class="experience-title">Sports Week</h3>
-                        <p class="experience-desc">Coordinated sound systems and live announcements during the school's
-                            annual sports week, supporting multiple athletic events and ceremonies.</p>
-                        <span class="experience-date">2022</span>
-                    </div>
-                </div>
-
-                <!-- Experience Card 3: Teacher's Day -->
-                <div class="experience-card">
-                    <div class="experience-icon">
-                        <i class="fas fa-chalkboard-teacher"></i>
-                    </div>
-                    <div class="experience-content">
-                        <span class="experience-role">Technical Operator</span>
-                        <h3 class="experience-title">Teacher's Day Celebration</h3>
-                        <p class="experience-desc">Operated multimedia systems for the Teacher's Day appreciation event,
-                            facilitating video presentations and musical performances.</p>
-                        <span class="experience-date">2022</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
+    <!-- ==================== CONTACT ==================== -->
     <section id="contact" class="contact">
         <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Contact Me</h2>
-                <div class="title-divider"></div>
+            <div class="section-intro">
+                <span class="label">Get in Touch</span>
+                <h2 class="section-heading">Let's Build Something.</h2>
+                <p class="section-desc">Open to collaborations, hackathon teams, and new opportunities.</p>
             </div>
-            <div class="contact-content">
-                <div class="social-links">
-                    <a href="https://www.linkedin.com/in/irhammhamzah/" target="_blank" class="social-link">
-                        <i class="fab fa-linkedin"></i>
-                        <span>LinkedIn</span>
-                    </a>
-                    <a href="https://github.com/IrrhammCode" target="_blank" class="social-link">
-                        <i class="fab fa-github"></i>
-                        <span>GitHub</span>
-                    </a>
-                    <a href="mailto:irhamhamzahedu@gmail.com" class="social-link">
-                        <i class="fas fa-envelope"></i>
-                        <span>Email</span>
-                    </a>
-                </div>
+            <div class="contact-links">
+                <a href="https://www.linkedin.com/in/irhammhamzah/" target="_blank" class="contact-item">
+                    <i class="fab fa-linkedin"></i>
+                    <div>
+                        <span class="contact-name">LinkedIn</span>
+                        <span class="contact-handle">irhammhamzah</span>
+                    </div>
+                    <i class="fas fa-arrow-up-right-from-square contact-ext"></i>
+                </a>
+                <a href="https://github.com/IrrhammCode" target="_blank" class="contact-item">
+                    <i class="fab fa-github"></i>
+                    <div>
+                        <span class="contact-name">GitHub</span>
+                        <span class="contact-handle">IrrhammCode</span>
+                    </div>
+                    <i class="fas fa-arrow-up-right-from-square contact-ext"></i>
+                </a>
+                <a href="mailto:irhamhamzahedu@gmail.com" class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <div>
+                        <span class="contact-name">Email</span>
+                        <span class="contact-handle">irhamhamzahedu@gmail.com</span>
+                    </div>
+                    <i class="fas fa-arrow-up-right-from-square contact-ext"></i>
+                </a>
             </div>
         </div>
     </section>
@@ -292,7 +395,7 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2025 Irham. All rights reserved.</p>
+            <p>&copy; 2026 Irham Muhammad Hamzah &mdash; Crafted with passion.</p>
         </div>
     </footer>
 
